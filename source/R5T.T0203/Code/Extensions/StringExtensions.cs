@@ -16,5 +16,17 @@ namespace R5T.T0203.Extensions
         {
             return Instances.StringOperator_Extensions.ToXmlText(value);
         }
+
+        /// <inheritdoc cref="IStringOperator.ToXPath(String)"/>
+        public static IXPath ToXPath(this String value)
+        {
+            return Instances.StringOperator_Extensions.ToXPath(value);
+        }
+
+        /// <inheritdoc cref="IStringOperator.ToXPathText(String)"/>
+        public static IXPathText ToXPathText(this String value)
+        {
+            return Instances.StringOperator_Extensions.ToXPathText(value);
+        }
     }
 }

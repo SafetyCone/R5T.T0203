@@ -21,5 +21,19 @@ namespace R5T.T0203.Extensions
             var output = new XmlText(value);
             return output;
         }
+
+        /// <inheritdoc cref="IXPath"/>
+        public IXPath ToXPath(string value)
+        {
+            var output = new XPath(value);
+            return output;
+        }
+
+        /// <inheritdoc cref="IXPathText"/>
+        public IXPathText ToXPathText(string value)
+        {
+            var output = new XPathText(value);
+            return output;
+        }
     }
 }
